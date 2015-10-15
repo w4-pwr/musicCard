@@ -11,6 +11,7 @@ using Microsoft.DirectX.DirectSound;
 using DirectSound = Microsoft.DirectX.DirectSound;
 using NAudio.Wave;
 using NAudio.CoreAudioApi;
+using System.IO;
 
 namespace WindowsFormsApplication1
 {
@@ -127,6 +128,41 @@ namespace WindowsFormsApplication1
             writer.Close();
             writer = null;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("v.wav", FileMode.Open, FileAccess.Read);
+            BinaryReader br = new BinaryReader(fs);
+            String info = "";
+
+            info += ("riff id:" + br.ReadBytes(4).ToString() + "\n");
+            UInt32 size = br.ReadUInt32();
+            info += ("size: " + size + "\n");
+            info += ("wavId: " + br.ReadBytes(4).ToString() + "\n");
+            info += ("fmtid" + br.ReadBytes(4).ToString() + "\n");
+            info += ("fmtSize:" + br.ReadUInt32() + "\n");
+            info += ("format:" + br.ReadUInt16() + "\n");
+            info += ("channels:" + br.ReadUInt16() + "\n");
+            info += ("sampleRate:" + br.ReadUInt32() + "\n");
+            info += ("bytePerSize: " + br.ReadUInt32() + "\n");
+            info += ("blockSize:" + br.ReadUInt16() + "\n");
+            info += ("bit: " + br.ReadUInt16() + "\n");
+            info += ("dataId: " + br.ReadBytes(4).ToString() + "\n");
+            info += ("dataSize: " + br.ReadUInt32() + "\n");
+
+
+
+
+            MessageBox.Show(info);
+
+        }
+
+
+  
+
+
+
+
     }
 
 }
