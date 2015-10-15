@@ -73,21 +73,17 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 13);
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 11;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 13);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Nazwa utworu:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 10;
             // 
             // button4
             // 
@@ -101,7 +97,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(58, 272);
+            this.button3.Location = new System.Drawing.Point(58, 277);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 52);
             this.button3.TabIndex = 7;
@@ -111,11 +107,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(58, 330);
+            this.button5.Location = new System.Drawing.Point(58, 351);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(160, 49);
             this.button5.TabIndex = 8;
-            this.button5.Text = "Wave In";
+            this.button5.Text = "Wave In Start";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -125,7 +121,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(162, 43);
             this.button6.TabIndex = 9;
-            this.button6.Text = "WaveIn stop";
+            this.button6.Text = "WaveIn Stop";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
